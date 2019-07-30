@@ -41,12 +41,13 @@ function minify_maxify(type, input, output) {
   }
   else { input.value = ''; output.value = ''; }
 
-var buttons = _('button');
-for(var i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener('click', function() {
-    minify_maxify(
-      this.innerHTML, _('textarea')[0],
-      _('textarea')[1]
-    );
-  }, false);
+	var buttons = _('button');
+	for(var i = 0; i < buttons.length; i++) {
+	  buttons[i].addEventListener('click', function() {
+		minify_maxify(
+		  this.innerHTML, _('textarea')[0],
+		  _('textarea')[1]
+		);
+	  }, false);
+	}
 }
